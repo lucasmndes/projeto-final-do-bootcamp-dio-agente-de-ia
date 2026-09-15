@@ -1,0 +1,157 @@
+{
+  "versao": "1.0.0",
+  "atualizado_em": "2026-09-15",
+  "aviso": "Conteúdo educacional e geral. A aplicabilidade depende do papel da organização, dos contratos, dos arranjos e das normas vigentes.",
+  "topicos": [
+    {
+      "id": "governanca-etica",
+      "titulo": "Governança, ética e integridade",
+      "palavras_chave": ["ética", "integridade", "conflito de interesses", "presente", "hospitalidade", "corrupção", "denúncia"],
+      "resumo": "Decisões devem ser íntegras, rastreáveis, segregadas quando necessário e livres de vantagem indevida ou conflito não tratado.",
+      "orientacoes": [
+        "Declare conflitos reais, potenciais ou aparentes antes de participar da decisão.",
+        "Não ofereça, prometa, solicite ou aceite vantagem para influenciar decisão pública ou privada.",
+        "Registre aprovações e mantenha evidências proporcionais ao risco.",
+        "Use o canal institucional apropriado para relatar suspeitas de boa-fé."
+      ],
+      "sinais_alerta": ["pedido de pagamento sem documentação", "intermediário sem justificativa", "benefício pessoal ligado a uma contratação"],
+      "escalar_quando": "Houver suspeita de fraude, corrupção, retaliação, conflito não resolvido ou pressão para contornar controles.",
+      "fontes": ["Lei nº 12.846/2013", "Decreto nº 11.129/2022"]
+    },
+    {
+      "id": "kyc-kyb-kyp-kye",
+      "titulo": "Conheça seu cliente, parceiro e colaborador",
+      "palavras_chave": ["kyc", "kyb", "kyp", "kye", "cadastro", "beneficiário final", "cliente", "parceiro", "fornecedor", "colaborador", "onboarding"],
+      "resumo": "A identificação, qualificação e validação devem ser proporcionais ao risco e ocorrer antes e durante o relacionamento.",
+      "orientacoes": [
+        "Colete apenas dados necessários e valide identidade, atividade, representação e beneficiário final quando aplicável.",
+        "Classifique o risco com critérios objetivos e aplique diligência reforçada nos casos de maior risco.",
+        "Atualize o cadastro de forma periódica e quando houver mudança relevante.",
+        "Não conclua o relacionamento quando inconsistências materiais permanecerem sem esclarecimento."
+      ],
+      "sinais_alerta": ["estrutura societária opaca", "documentos inconsistentes", "atividade declarada incompatível", "resistência em informar beneficiário final"],
+      "escalar_quando": "Persistirem divergências, houver indício de identidade falsa, sanção, PEP ou estrutura sem propósito econômico claro.",
+      "fontes": ["Circular BCB nº 3.978/2020", "Lei nº 9.613/1998"]
+    },
+    {
+      "id": "pld-ft",
+      "titulo": "Prevenção à lavagem de dinheiro e ao financiamento do terrorismo",
+      "palavras_chave": ["pld", "lavagem", "terrorismo", "pep", "sanção", "lista restritiva", "operação suspeita", "coaf", "monitoramento"],
+      "resumo": "Uma abordagem baseada em risco combina avaliação institucional, diligência, monitoramento, análise, registros e comunicação pelas funções autorizadas.",
+      "orientacoes": [
+        "Avalie comportamento, atividade econômica, geografia, produtos, canais e partes relacionadas em conjunto.",
+        "Trate alertas como ponto de partida para análise, não como prova automática de irregularidade.",
+        "Preserve confidencialidade; não informe à parte analisada sobre eventual comunicação às autoridades.",
+        "Mantenha evidências da análise e da decisão conforme os prazos aplicáveis."
+      ],
+      "sinais_alerta": ["fragmentação sem justificativa", "volume incompatível com o perfil", "fluxo circular", "uso de terceiros sem razão aparente"],
+      "escalar_quando": "O alerta não puder ser explicado por evidências confiáveis ou envolver PEP, sanções, terrorismo ou tentativa de evasão de controles.",
+      "fontes": ["Lei nº 9.613/1998", "Circular BCB nº 3.978/2020", "Lei nº 13.260/2016"]
+    },
+    {
+      "id": "credenciamento",
+      "titulo": "Credenciamento e monitoramento de estabelecimentos",
+      "palavras_chave": ["credenciamento", "estabelecimento", "lojista", "merchant", "mcc", "subadquirente", "subcredenciador", "maquininha"],
+      "resumo": "O credenciamento deve confirmar identidade, legitimidade da atividade, risco do segmento e compatibilidade do comportamento transacional.",
+      "orientacoes": [
+        "Verifique existência, representação, atividade e canais de venda antes da ativação.",
+        "Aplique controles proporcionais ao risco do segmento, modelo de negócio e canal.",
+        "Monitore mudanças relevantes em volume, padrão, disputas e cadastro.",
+        "Documente bloqueios, liberações e encerramentos com justificativa e alçada adequada."
+      ],
+      "sinais_alerta": ["produto vendido diferente do declarado", "site sem informações mínimas", "mudança súbita de padrão", "concentração anormal de disputas"],
+      "escalar_quando": "Houver suspeita de atividade proibida, fraude, identidade inconsistente ou risco relevante ao ecossistema.",
+      "fontes": ["Lei nº 12.865/2013", "Regras dos arranjos e contratos aplicáveis"]
+    },
+    {
+      "id": "fraude-chargeback",
+      "titulo": "Fraude, contestação e chargeback",
+      "palavras_chave": ["fraude", "chargeback", "contestação", "disputa", "transação", "cartão", "estorno"],
+      "resumo": "Prevenção e tratamento de disputas exigem autenticação, monitoramento, evidências, prazos e tratamento justo das partes.",
+      "orientacoes": [
+        "Preserve comprovantes e evidências de entrega, consentimento e autenticação.",
+        "Analise padrões de dispositivo, frequência, valor, localização e histórico de forma contextual.",
+        "Não presuma fraude somente pela existência de uma contestação.",
+        "Observe os prazos e regras contratuais do arranjo de pagamento aplicável."
+      ],
+      "sinais_alerta": ["múltiplas tentativas", "divergência de identidade", "pico de contestações", "autotranzação ou conluio aparente"],
+      "escalar_quando": "Existir padrão coordenado, impacto material, dados comprometidos ou possível crime.",
+      "fontes": ["Lei nº 12.865/2013", "Regras dos arranjos e contratos aplicáveis"]
+    },
+    {
+      "id": "recebiveis",
+      "titulo": "Recebíveis e liquidação",
+      "palavras_chave": ["recebíveis", "antecipação", "agenda", "liquidação", "gravame", "domicílio bancário"],
+      "resumo": "A gestão de recebíveis deve preservar rastreabilidade, integridade da agenda, transparência de condições e respeito a ônus e contratos válidos.",
+      "orientacoes": [
+        "Confirme titularidade, agenda, obrigações e autorização antes de alterar fluxo de liquidação.",
+        "Apresente condições, custos e efeitos da antecipação de forma clara.",
+        "Concilie eventos e trate divergências antes da liquidação.",
+        "Mantenha trilha de auditoria das instruções e alterações."
+      ],
+      "sinais_alerta": ["alteração de conta sem validação", "duplicidade de cessão", "divergência de agenda", "antecipação incompatível com o histórico"],
+      "escalar_quando": "Houver disputa de titularidade, indício de fraude, divergência material ou impedimento contratual/regulatório.",
+      "fontes": ["Lei nº 12.865/2013", "Regulamentação vigente do BCB sobre recebíveis de arranjos"]
+    },
+    {
+      "id": "privacidade-lgpd",
+      "titulo": "Privacidade e proteção de dados",
+      "palavras_chave": ["lgpd", "privacidade", "dados pessoais", "titular", "consentimento", "base legal", "eliminação", "acesso"],
+      "resumo": "O tratamento de dados deve ter finalidade legítima, base legal, necessidade, transparência, segurança e respeito aos direitos dos titulares.",
+      "orientacoes": [
+        "Defina finalidade e base legal antes do tratamento; consentimento não é a única base possível.",
+        "Minimize coleta, acesso, compartilhamento e retenção.",
+        "Valide a identidade do solicitante antes de atender direitos do titular.",
+        "Registre decisões e encaminhe solicitações ao canal de privacidade quando necessário."
+      ],
+      "sinais_alerta": ["planilha com dados enviada a destinatário errado", "acesso sem necessidade", "coleta excessiva", "uso incompatível com a finalidade"],
+      "escalar_quando": "Houver incidente, dado sensível, dúvida sobre base legal, solicitação de titular ou compartilhamento não previsto.",
+      "fontes": ["Lei nº 13.709/2018", "Resolução CD/ANPD nº 15/2024"]
+    },
+    {
+      "id": "seguranca-incidentes",
+      "titulo": "Segurança da informação e incidentes",
+      "palavras_chave": ["segurança", "incidente", "vazamento", "phishing", "senha", "acesso", "vulnerabilidade", "ransomware"],
+      "resumo": "A segurança combina prevenção, detecção, resposta, recuperação e aprendizado, com acesso pelo menor privilégio.",
+      "orientacoes": [
+        "Não compartilhe credenciais, códigos de autenticação ou dados sensíveis pelo chat.",
+        "Isole o risco sem destruir evidências e acione imediatamente o processo institucional de incidentes.",
+        "Conceda acessos por necessidade, com aprovação, revisão e revogação tempestiva.",
+        "Trate vulnerabilidades conforme risco e valide a correção."
+      ],
+      "sinais_alerta": ["login incomum", "exfiltração", "mensagem de phishing", "privilégio excessivo", "serviço indisponível"],
+      "escalar_quando": "Houver suspeita de comprometimento, exposição de dados, indisponibilidade relevante ou ameaça ativa.",
+      "fontes": ["Lei nº 13.709/2018", "Resolução CD/ANPD nº 15/2024"]
+    },
+    {
+      "id": "continuidade-riscos",
+      "titulo": "Riscos operacionais e continuidade",
+      "palavras_chave": ["continuidade", "indisponibilidade", "backup", "desastre", "risco operacional", "liquidez", "crise"],
+      "resumo": "Serviços críticos precisam de responsáveis, dependências mapeadas, alternativas, comunicação e testes periódicos de recuperação.",
+      "orientacoes": [
+        "Classifique criticidade e impacto antes de priorizar a resposta.",
+        "Mantenha procedimentos alternativos e contatos de crise atualizados.",
+        "Teste restauração e continuidade; não confunda existência de backup com capacidade de recuperação.",
+        "Registre causa, impacto, decisão e lições aprendidas."
+      ],
+      "sinais_alerta": ["falha recorrente", "dependência sem contingência", "backup não testado", "diferença de conciliação"],
+      "escalar_quando": "A falha atingir serviço crítico, liquidação, dados, clientes em escala ou ultrapassar tolerância definida.",
+      "fontes": ["Boas práticas de gestão de riscos", "Contratos e requisitos regulatórios aplicáveis"]
+    },
+    {
+      "id": "desenvolvimento-mudancas",
+      "titulo": "Desenvolvimento seguro e gestão de mudanças",
+      "palavras_chave": ["desenvolvimento", "deploy", "mudança", "código", "produção", "homologação", "vulnerabilidade", "segredo"],
+      "resumo": "Mudanças tecnológicas devem ser autorizadas, testadas, rastreáveis, reversíveis e protegidas contra exposição de segredos e dados.",
+      "orientacoes": [
+        "Separe ambientes e funções incompatíveis.",
+        "Revise código, dependências, permissões e cenários de falha antes da implantação.",
+        "Nunca armazene segredo ou dado real em código, repositório ou exemplo público.",
+        "Defina plano de reversão e monitore o resultado da mudança."
+      ],
+      "sinais_alerta": ["mudança emergencial recorrente", "segredo em repositório", "teste com dado real", "implantação sem rollback"],
+      "escalar_quando": "A mudança afetar controles, dados, liquidação, segurança ou não puder ser testada adequadamente.",
+      "fontes": ["Boas práticas de segurança e controles internos"]
+    }
+  ]
+}

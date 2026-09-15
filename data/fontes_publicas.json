@@ -1,0 +1,11 @@
+{
+  "consultado_em": "2026-09-15",
+  "fontes": [
+    {"titulo": "Lei nº 12.865/2013 — arranjos e instituições de pagamento", "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12865.htm"},
+    {"titulo": "Lei nº 9.613/1998 — prevenção à lavagem de dinheiro", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9613.htm"},
+    {"titulo": "Circular BCB nº 3.978/2020 — PLD/FT", "url": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Circular&numero=3978"},
+    {"titulo": "Lei nº 13.709/2018 — LGPD", "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"},
+    {"titulo": "Resolução CD/ANPD nº 15/2024 — comunicação de incidentes", "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-aprova-o-regulamento-de-comunicacao-de-incidente-de-seguranca"},
+    {"titulo": "Lei nº 12.846/2013 — responsabilização por atos contra a administração pública", "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm"}
+  ]
+}

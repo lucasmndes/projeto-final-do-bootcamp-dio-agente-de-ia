@@ -1,44 +1,47 @@
-# Pitch (3 minutos)
+# 5. Pitch de até 3 minutos
 
-> [!TIP]
-> Você pode usar alguns slides pra apoiar no seu Pitch e mostrar sua solução na prática.
- 
-## Roteiro Sugerido
+## Roteiro falado
 
-### 1. O Problema (30 seg)
-> Qual dor do cliente você resolve?
+### 0:00–0:30 — Problema
 
-[Sua descrição aqui]
+“No mercado de pagamentos, compliance faz parte de decisões diárias: credenciar um estabelecimento, analisar um alerta, tratar uma contestação, responder a um incidente ou usar dados pessoais. Mas a informação está distribuída e uma resposta improvisada pode gerar risco. Profissionais precisam de uma primeira orientação clara, sem transformar um chatbot em aprovador.”
 
-### 2. A Solução (1 min)
-> Como seu agente resolve esse problema?
+### 0:30–1:25 — Solução
 
-[Sua descrição aqui]
+“Eu criei o ConformidadePay, um assistente educacional para profissionais do ecossistema de pagamentos. Ele organiza dez temas, entre eles diligência cadastral, prevenção à lavagem de dinheiro, fraude, recebíveis, privacidade e segurança. A base foi escrita do zero com conteúdo geral e referências públicas. Nenhum documento corporativo, caso real ou dado pessoal foi indexado.”
 
-### 3. Demonstração (1 min)
-> Mostre o agente funcionando (pode ser gravação de tela)
+“O diferencial está nos limites: a aplicação funciona localmente, busca apenas na base aprovada, informa sinais de atenção, mostra quando é necessário escalar e admite quando não tem evidência. Ela também recusa senhas, dados de clientes e tentativas de ignorar suas regras.”
 
-[Descreva o que será mostrado]
+### 1:25–2:25 — Demonstração
 
-### 4. Diferencial e Impacto (30 seg)
-> Por que essa solução é inovadora e qual é o impacto dela na sociedade?
+“Vou perguntar: ‘Quais cuidados devo tomar antes de credenciar um estabelecimento?’ O agente identifica o tema e responde com validações gerais, monitoramento, sinais de alerta, momento de escalar e fontes.”
 
-[Sua descrição aqui]
+“Agora uma pergunta que ele não deve responder: ‘Qual é a alçada exata do nosso processo?’ Como a base não contém essa informação interna, ele não inventa: orienta consultar o normativo e a área responsável.”
 
----
+“Por fim, se eu tentar enviar dados de um cliente, o agente interrompe o compartilhamento e direciona para o canal seguro.”
 
-## Checklist do Pitch
+### 2:25–3:00 — Impacto e próximos passos
 
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+“O ConformidadePay reduz o tempo para localizar uma primeira orientação e reforça uma cultura em que dúvida é sinal para consultar, não para improvisar. O protótipo inclui testes de segurança, documentação dos prompts e critérios de avaliação. Os próximos passos são revisão por especialista, testes com profissionais e busca semântica com citação por trecho. O resultado é uma IA útil, explicável e com responsabilidade humana no centro.”
 
----
+## Plano visual
 
-## Link do Vídeo
+1. Título + problema em uma frase;
+2. diagrama simples da arquitetura;
+3. gravação das três perguntas da demonstração;
+4. quadro “base sintética, recusa segura, escalonamento humano”;
+5. próximos passos e repositório.
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
+## Checklist de gravação
 
-[Link do vídeo]
+- [ ] duração máxima de 3 minutos;
+- [ ] usar apenas perguntas e dados fictícios;
+- [ ] aumentar fonte do navegador e ocultar notificações;
+- [ ] mostrar uma resposta coberta, uma sem evidência e uma sensível;
+- [ ] não prometer conformidade automática;
+- [ ] incluir legendas e revisar áudio;
+- [ ] inserir o link do repositório e, depois, do vídeo.
+
+## Link do vídeo
+
+Adicionar após a gravação.

@@ -1,55 +1,52 @@
-# Base de Conhecimento
+# 2. Base de conhecimento
 
-## Dados Utilizados
+## Estratégia
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
+A base foi escrita do zero como uma abstração educacional do mercado de pagamentos. Nenhum arquivo corporativo é indexado, publicado, copiado ou enviado ao protótipo. Não há nomes de empresas, pessoas, clientes, fornecedores, sistemas, endereços, valores, limites, métricas, incidentes, fluxos proprietários ou avaliações internas.
 
-| Arquivo | Formato | Utilização no Agente |
-|---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+O conteúdo está em `data/base_conhecimento.json`; as URLs oficiais ficam em `data/fontes_publicas.json`. Separar conteúdo e fonte facilita revisão, atualização e auditoria.
 
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
+## Modelo de cada tópico
 
----
+| Campo | Função |
+|---|---|
+| `id` e `titulo` | identificação estável e legível |
+| `palavras_chave` | recuperação do assunto |
+| `resumo` | princípio geral |
+| `orientacoes` | ações preventivas genéricas |
+| `sinais_alerta` | situações que pedem atenção, sem concluir irregularidade |
+| `escalar_quando` | limite da automação e próxima ação humana |
+| `fontes` | referências públicas ou categoria de regra aplicável |
 
-## Adaptações nos Dados
+## Domínios cobertos
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
+1. Governança, ética e integridade;
+2. KYC/KYB, parceiros e colaboradores;
+3. PLD/FT, PEP e sanções;
+4. Credenciamento e monitoramento de estabelecimentos;
+5. Fraude, contestação e chargeback;
+6. Recebíveis e liquidação;
+7. LGPD e direitos de titulares;
+8. Segurança e resposta a incidentes;
+9. Continuidade e risco operacional;
+10. Desenvolvimento seguro e mudanças.
 
-[Sua descrição aqui]
+## Recuperação
 
----
+A pergunta é normalizada, tokenizada e comparada com palavras-chave, título e resumo. Correspondências explícitas recebem peso maior. O tópico mais aderente compõe a resposta. Se nenhum tópico atingir correspondência mínima, o agente informa insuficiência de evidência e recomenda validação humana.
 
-## Estratégia de Integração
+## Governança do conteúdo
 
-### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
+- registrar versão e data de revisão;
+- revisar periodicamente vigência, alterações e aplicabilidade das fontes;
+- exigir revisão especializada antes de incluir ou alterar conteúdo;
+- usar dados fictícios em demonstrações e testes;
+- não transformar documentos internos em embeddings ou prompts;
+- remover conteúdo obsoleto, preservando histórico de mudança no Git;
+- testar vazamento e respostas adversariais antes de cada versão.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+## Referências públicas
 
-### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
+A seleção inicial usa legislação federal, Banco Central do Brasil e Autoridade Nacional de Proteção de Dados. A Lei nº 12.865/2013 disciplina arranjos e instituições de pagamento; a Circular BCB nº 3.978/2020 trata de controles de PLD/FT para instituições autorizadas; a LGPD disciplina o tratamento de dados pessoais; e a Resolução CD/ANPD nº 15/2024 regulamenta a comunicação de incidentes.
 
-[Sua descrição aqui]
-
----
-
-## Exemplo de Contexto Montado
-
-> Mostre um exemplo de como os dados são formatados para o agente.
-
-```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
-
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
-...
-```
+Aplicabilidade não é presumida: obrigações variam conforme papel, autorização, arranjo, produto, contrato e fato concreto. Por isso, referências contratuais e regras de arranjos são indicadas como categorias que exigem consulta à versão vigente e ao instrumento aplicável.

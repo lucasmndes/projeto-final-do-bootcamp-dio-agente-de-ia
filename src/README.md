@@ -1,31 +1,12 @@
-# Código da Aplicação
+# Aplicação
 
-Esta pasta contém o código do seu agente financeiro.
+- `assistente.py`: núcleo local, busca, guardrails e composição das respostas.
+- `app.py`: interface conversacional em Streamlit.
+- `requirements.txt`: dependência da interface.
 
-## Estrutura Sugerida
-
-```
-src/
-├── app.py              # Aplicação principal (Streamlit/Gradio)
-├── agente.py           # Lógica do agente
-├── config.py           # Configurações (API keys, etc.)
-└── requirements.txt    # Dependências
-```
-
-## Exemplo de requirements.txt
-
-```
-streamlit
-openai
-python-dotenv
-```
-
-## Como Rodar
+Execute a partir da raiz:
 
 ```bash
-# Instalar dependências
-pip install -r requirements.txt
-
-# Rodar a aplicação
-streamlit run app.py
+python -m pip install -r src/requirements.txt
+python -m streamlit run src/app.py
 ```

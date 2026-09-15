@@ -1,149 +1,110 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🛡️ ConformidadePay — Assistente de Compliance para Pagamentos
 
-## Contexto
+Protótipo educacional de um assistente virtual que ajuda profissionais do mercado de pagamentos a compreender controles de conformidade aplicáveis a uma operação de credenciamento e subcredenciamento.
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+O projeto foi desenvolvido para o Lab **Construa Seu Assistente Virtual Com Inteligência Artificial**, da DIO, e percorre as seis etapas propostas: documentação, base de conhecimento, prompts, aplicação funcional, avaliação e pitch.
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+> **Importante:** o conteúdo é geral, sintético e baseado em referências públicas. Não contém documentos corporativos, dados pessoais, casos reais, segredos comerciais nem procedimentos internos de qualquer organização. As respostas não são parecer jurídico ou regulatório.
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+## Problema e solução
 
----
+No ecossistema de pagamentos, dúvidas sobre cadastro, PLD/FT, privacidade, fraude, recebíveis e segurança aparecem no trabalho diário. A informação costuma estar distribuída, enquanto uma resposta apressada pode criar risco.
 
-## O Que Você Deve Entregar
+O ConformidadePay oferece uma primeira orientação segura:
 
-### 1. Documentação do Agente
+- encontra o tema mais relacionado à pergunta;
+- responde somente com trechos estruturados da base aprovada;
+- informa sinais de atenção e quando escalar;
+- aponta referências públicas;
+- recusa segredos, dados pessoais e tentativas de burlar suas regras;
+- admite quando não possui evidência suficiente.
 
-Defina **o que** seu agente faz e **como** ele funciona:
+## Demonstração rápida
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
+Pergunte: **Quais cuidados devo tomar antes de credenciar um estabelecimento?**
 
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+O agente retorna contexto, ações recomendadas, sinais de alerta, critérios de escalonamento e fontes. Se a pergunta pedir uma alçada interna exata ou trouxer dados sensíveis, ele não inventa a resposta e direciona para validação humana.
 
----
+## Arquitetura
 
-### 2. Base de Conhecimento
-
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
-
----
-
-### 3. Prompts do Agente
-
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+```mermaid
+flowchart LR
+    U[Pessoa usuária] --> UI[Chat Streamlit]
+    UI --> G[Guardrails de entrada]
+    G --> R[Busca lexical explicável]
+    R --> KB[(Base sintética em JSON)]
+    KB --> C[Compositor de resposta]
+    C --> V[Fontes + limite + escalonamento]
+    V --> UI
 ```
 
----
+O núcleo funciona localmente e de forma determinística. Essa escolha permite demonstrar grounding e anti-alucinação sem exigir chave de API ou enviar conteúdo a terceiros. Uma LLM pode ser adicionada futuramente apenas para reformulação, mantendo a recuperação e as validações como fonte de verdade.
 
-## Dicas Finais
+## Como executar
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+Requisitos: Python 3.10 ou superior.
+
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# Linux/macOS: source .venv/bin/activate
+python -m pip install -r src/requirements.txt
+python -m streamlit run src/app.py
+```
+
+Para executar os testes, sem dependências externas:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+## Estrutura
+
+```text
+data/
+  base_conhecimento.json   # conteúdo sintético usado nas respostas
+  fontes_publicas.json     # referências oficiais e data de consulta
+docs/                      # documentação das seis etapas
+src/
+  app.py                   # interface Streamlit
+  assistente.py            # recuperação, composição e guardrails
+tests/
+  test_assistente.py
+```
+
+## Escopo da base
+
+Ética e integridade; KYC/KYB e diligência; PLD/FT; credenciamento; fraude e chargeback; recebíveis; privacidade; segurança; continuidade; e desenvolvimento seguro.
+
+## Segurança e privacidade por desenho
+
+- Base pública e sintética, sem indexação de documentos internos;
+- nenhuma credencial ou chave de API;
+- processamento local no protótipo;
+- respostas limitadas ao conteúdo recuperado;
+- recusa de solicitações sensíveis e de prompt injection;
+- escalonamento explícito para Compliance, Jurídico, Privacidade ou Segurança;
+- aviso constante de que a aplicabilidade depende do caso concreto.
+
+## Referências públicas principais
+
+- [Lei nº 12.865/2013 — arranjos e instituições de pagamento](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12865.htm)
+- [Lei nº 9.613/1998 — prevenção à lavagem de dinheiro](https://www.planalto.gov.br/ccivil_03/leis/l9613.htm)
+- [Circular BCB nº 3.978/2020 — PLD/FT](https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Circular&numero=3978)
+- [Lei nº 13.709/2018 — LGPD](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm)
+- [Resolução CD/ANPD nº 15/2024 — incidentes de segurança](https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-aprova-o-regulamento-de-comunicacao-de-incidente-de-seguranca)
+- [Lei nº 12.846/2013 — anticorrupção](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm)
+
+Consulte a vigência e a aplicabilidade antes de usar qualquer referência em uma decisão real.
+
+## Próximos passos
+
+- revisão por especialista independente;
+- busca semântica com citação por trecho;
+- autenticação e perfis de acesso;
+- avaliação com 3 a 5 profissionais e publicação das notas consolidadas;
+- integração opcional com LLM sob controles de privacidade adequados.
+
+## Autoria
+
+Projeto de portfólio desenvolvido por **Lucas Mendes** para o Bootcamp DIO.
